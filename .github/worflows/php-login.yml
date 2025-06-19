@@ -10,4 +10,4 @@ on:
 
 jobs:
   login:
-    uses: nikollyftg/php-workflows/.github/workflows/login.yml@master
+    uses: nikollyftg/php-workflows/.github/worflows/login.yml@master
