@@ -1,12 +1,12 @@
-
-
-name: CI via Workflow Reutilizável (correção)
-
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-
+name: Login PHP Workflow
+ 
+on: [push]
+ 
 jobs:
-  login:
-    uses: nikollyftg/php-workflows/.github/worflows/login.yml@master
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo "Rodando automação para login.php"
